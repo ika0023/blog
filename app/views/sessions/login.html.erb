@@ -2,10 +2,10 @@
 	<h2 class="text-center">ログイン画面</h2>
 	<div class="row">
 		<div class="col-sm-6 col-sm-offset-3">
-      <%= form_tag "/login" do %>
-        <%= text_field_tag :name, id: "name", class: "form-control"%>
-        <%= submit_tag "ログイン"%>
-      <% end %>
-		</div>
+		<%= form_tag "/login" do %>
+      <%= text_field_tag :name, "",id: "name", class: "form-control"%>
+      <%= submit_tag "ログイン", class: "form-control"%>
+    <% end %>
+    </div>
 	</div>
 </div>

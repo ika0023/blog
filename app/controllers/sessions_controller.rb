@@ -3,7 +3,8 @@ class SessionsController < ApplicationController
     if request.post?
       user = User.find_by(name: params[:name])
       if user
-         redirect_to "index_path"
+        session[:user_id] = user.id
+         redirect_to root_path
       else
         flash[:danger] = "無効なユーザーです"
         render 'login'
@@ -13,11 +14,4 @@ class SessionsController < ApplicationController
 
   def index
   end
-
-  private
-
-  def user_params
-   # params.require(:name).permit(:name)
-  end
-
 end
