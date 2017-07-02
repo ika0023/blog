@@ -20,6 +20,13 @@ gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
+# Additional Gem Files
+gem 'jquery-rails'
+gem 'bootstrap-sass', '3.3.6'
+gem 'will_paginate',          '3.1.0'
+gem 'bootstrap-will_paginate', '0.0.10'
+
+
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
